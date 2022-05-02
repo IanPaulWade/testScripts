@@ -15,12 +15,12 @@ def steepness(h, t):
 
 
 # wave period, given height and steepness
-def t_from_hs(h, s):
+def period_from_hs(h, s):
     t = math.sqrt((2 * pi * h * s) / g)
     return t
 
 
 # wave height, given period and steepness
-def h_from_ts(t, s):
+def height_from_ts(t, s):
     h = ((g * pow(t, 2)) / (2 * pi * s))
     return h
